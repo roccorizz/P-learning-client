@@ -1,6 +1,6 @@
 import React from 'react';
-import Footer from '../pages/shared/Footer/Footer';
-import Header from '../pages/shared/Header/Header';
+import Footer from '../Pages/shared/Footer/Footer';
+import Header from '../Pages/shared/Header/Header';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Outlet } from 'react-router-dom';
 

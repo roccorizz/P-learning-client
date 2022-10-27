@@ -1,0 +1,41 @@
+.login .btnreg a {
+    text-decoration: none;
+    color: white;
+}
+
+.login .btnreg a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.login .card {
+    background-color: #1e2f50e9;
+    color: white;
+}
+
+.register .btnreg a {
+    text-decoration: none;
+    color: white;
+}
+
+.register .btnreg a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.register .card {
+    background-color: #1e2f50e9;
+    color: white;
+}
+
+
+
+@media (max-width: 600px) {
+    .login .card {
+        width: 100% !important;
+    }
+
+    .register .card {
+        width: 100% !important;
+    }
+}
