@@ -1,27 +1,18 @@
 import React from 'react';
+import Footer from '../pages/shared/Footer/Footer';
+import Header from '../pages/shared/Header/Header';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Outlet } from 'react-router-dom';
-import Footer from '../Pages/Shared/Footer/Footer';
-import Header from '../Pages/Shared/Header/Header';
-import LeftSideNav from '../Pages/Shared/LeftSideNav/LeftSideNav';
-import RightSideNav from '../Pages/Shared/RightSideNav/RightSideNav';
 
 const Main = () => {
     return (
         <div>
             <Header></Header>
-            <Container className=''>
+            <Container className="mt-5">
                 <Row>
-                    <Col lg="2">
-                        <LeftSideNav></LeftSideNav>
-                    </Col>
-                    <Col lg="7">
+                    <Col lg={12}>
                         <Outlet></Outlet>
                     </Col>
-                    <Col lg="3">
-                        <RightSideNav></RightSideNav>
-                    </Col>
-
                 </Row>
             </Container>
             <Footer></Footer>
