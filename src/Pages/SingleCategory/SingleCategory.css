@@ -1,0 +1,17 @@
+.singlecategory .card {
+    background-color: #1e2e4e;
+    color: white;
+    width: 80%;
+}
+
+.singlecategory a {
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .singlecategory .card {
+
+        width: 100%;
+    }
+
+}

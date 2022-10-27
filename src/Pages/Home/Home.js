@@ -1,7 +1,7 @@
 import React from 'react';
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
-import slider1 from './slider1.jpg';
+import slider1 from './slider1.png';
 import slider2 from './slider2.jpg';
 import slider3 from './slider3.jpg';
 import './Home.css';
