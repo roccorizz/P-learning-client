@@ -6,7 +6,7 @@ import { FaUserAlt } from "react-icons/fa";
 
 
 import { NavLink } from 'react-router-dom';
-import logo from './logo.png';
+import logo from './logo.jpg';
 import Image from 'react-bootstrap/Image';
 import './Header.css';
 import { AuthContext } from '../../../Context/AuthProvider';

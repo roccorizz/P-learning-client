@@ -1,16 +1,16 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../layout/Main";
-import Home from "../pages/Home/Home";
-import Category from "../pages/Category/Category";
-import Courses from "../pages/Courses/Courses";
-import Login from "../pages/Auth/Login";
-import Register from "../pages/Auth/Register";
-import Profile from "../pages/Profile/Profile";
+import Home from "../Pages/Home/Home";
+import Category from "../Pages/Category/Category";
+import Courses from "../Pages/Courses/Courses";
+import Login from "../Pages/Auth/Login";
+import Register from "../Pages/Auth/Register";
+import Profile from "../Pages/Profile/Profile";
 import Faq from "../Pages/shared/Faq/Faq";
 import Blog from "../Pages/shared/Blog/Blog";
-import Course from "../pages/Course/Course";
-import Checkout from "../pages/Checkout/Checkout";
-import Privateroute from "./Privateroute/Privateroute";
+import Course from "../Pages/Course/Course";
+import Checkout from "../Pages/Checkout/Checkout";
+import Privateroute from "./PrivateRoute/PrivateRoute";
 
 
 
