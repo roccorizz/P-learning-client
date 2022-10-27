@@ -27,8 +27,8 @@ const Home = () => {
                 <div className="about">
                     <div className='row'>
                         <div className='col-md-7 col-sm-12 mt-5'>
-                            <h2>TryCatch | Best IT Training Institute in Bangladesh</h2>
-                            <p>TryCatch is recognized as one of Bangladesh's best global skill development and IT training centres. The journey of TryCatch started in 2014 with a big dream to bring applied education to the mass population at an affordable cost. The main purpose of TryCatch is to facilitate the underprivileged, disadvantaged people, especially youth and women, with the best IT-related skills.</p>
+                            <h2>P-learning | Best IT Training Institute in Bangladesh</h2>
+                            <p>P-learning is recognized as one of Bangladesh's best global skill development and IT training centres. The journey of P-learning started in 2014 with a big dream to bring applied education to the mass population at an affordable cost. The main purpose of P-learning is to facilitate the underprivileged, disadvantaged people, especially youth and women, with the best IT-related skills.</p>
 
                         </div>
                         <div className='col-md-5 col-sm-12 mt-5 text-light'>

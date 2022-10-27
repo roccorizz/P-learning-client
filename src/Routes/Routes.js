@@ -10,7 +10,7 @@ import Faq from "../Pages/shared/Faq/Faq";
 import Blog from "../Pages/shared/Blog/Blog";
 import Course from "../Pages/Course/Course";
 import Checkout from "../Pages/Checkout/Checkout";
-import Privateroute from "./PrivateRoute/PrivateRoute";
+import PrivateRoute from "./PrivateRoute/PrivateRoute";
 
 
 
@@ -39,7 +39,7 @@ export const routes = createBrowserRouter([
             },
             {
                 path: '/course-checkout/:id',
-                element: <Privateroute><Checkout></Checkout></Privateroute>,
+                element: <PrivateRoute><Checkout></Checkout></PrivateRoute>,
                 loader: ({ params }) => fetch(`https://plearning-server.vercel.app/course/${params.id}`)
 
             },

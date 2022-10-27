@@ -9,6 +9,9 @@ const auth = getAuth(app)
 const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
+
+    console.log(user)
+
     const providerLogin = (provider) => {
         return signInWithPopup(auth, provider);
     }
@@ -46,6 +49,7 @@ const AuthProvider = ({ children }) => {
         return sendPasswordResetEmail(auth, email);
     }
     const authInfo = { user, providerLogin, SignOut, loading, forgetPassword, createUser, loginUser, updateUserProfile, setLoading };
+
     return (
         <div>
             <AuthContext.Provider value={authInfo}>

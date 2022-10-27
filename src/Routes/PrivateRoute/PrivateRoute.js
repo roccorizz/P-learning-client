@@ -4,8 +4,10 @@ import { Navigate, useLocation } from 'react-router-dom';
 import Spinner from 'react-bootstrap/Spinner';
 import { AuthContext } from '../../Context/AuthProvider';
 
-const Privateroute = ({ children }) => {
+const PrivateRoute = ({ children }) => {
     const { user, loading } = useContext(AuthContext);
+
+
     const location = useLocation();
     if (loading) {
         return <Spinner animation="border" variant="primary" />
@@ -18,4 +20,4 @@ const Privateroute = ({ children }) => {
     }
 };
 
-export default Privateroute;
+export default PrivateRoute;

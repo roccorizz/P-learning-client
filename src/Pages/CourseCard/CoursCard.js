@@ -1,10 +1,10 @@
 import React from 'react';
 import Image from 'react-bootstrap/Image';
-import './Coursecard.css';
+import './CourseCard.css';
 import { Link } from 'react-router-dom';
 
 const Coursecard = ({ course }) => {
-    const { _id, title, category_id, instructor, course_hours, price, image_url } = course;
+    const { _id, title, instructor, course_hours, price, image_url } = course;
     return (
 
         <div className='col-md-6 coursecard'>

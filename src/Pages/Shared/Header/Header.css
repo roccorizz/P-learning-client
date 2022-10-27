@@ -13,4 +13,12 @@
     background-color: #506027;
     padding: 2px 5px 2px 5px;
     border-radius: 3px;
+
+}
+
+.switch {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
 }

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { FaRegDotCircle } from "react-icons/fa";
 import { Link } from 'react-router-dom';
-import Coursecard from '../CourseCard/Coursecard';
+import Coursecard from '../CourseCard/CoursCard';
 
 
 const Category = () => {

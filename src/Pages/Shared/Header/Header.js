@@ -1,15 +1,15 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { FaUserAlt } from "react-icons/fa";
-
 
 import { NavLink } from 'react-router-dom';
 import logo from './logo.jpg';
 import Image from 'react-bootstrap/Image';
 import './Header.css';
 import { AuthContext } from '../../../Context/AuthProvider';
+import { Button } from 'react-bootstrap';
 
 const Header = () => {
     const { user, SignOut } = useContext(AuthContext);
@@ -19,13 +19,18 @@ const Header = () => {
             .catch(error => console.error(error))
     }
 
+    const { isDark, setIsDark } = useState(false);
+    const handleToogle = () => {
+        setIsDark(!isDark)
+    }
+
     return (
         <>
             <Navbar collapseOnSelect expand="lg" style={{ backgroundColor: "#1E2F50" }}>
                 <Container>
                     <Navbar.Brand className="d-flex align-items-center">
                         <Image src={logo} style={{ width: "100px", marginTop: "-10px" }}></Image>
-                        <h3 className="text-light" style={{ paddingTop: "15px" }}>TryCatch</h3>
+                        <h3 className="text-light" style={{ paddingTop: "15px" }}>P-learning</h3>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
@@ -35,7 +40,12 @@ const Header = () => {
                             <NavLink to="/courses" activeclassname="active">COURSES</NavLink>
                             <NavLink to="/faq" activeclassname="active">FAQ</NavLink>
                             <NavLink to="/blog" activeclassname="active">BLOG</NavLink>
-
+                            {
+                                isDark ?
+                                    <Button onClick={handleToogle}>Dark</Button>
+                                    :
+                                    <Button onClick={handleToogle}>Light</Button>
+                            }
 
                             {
                                 user?.uid ?
