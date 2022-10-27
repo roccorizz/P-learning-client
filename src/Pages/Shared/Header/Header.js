@@ -20,7 +20,7 @@ const Header = () => {
     }
 
     const { isDark, setIsDark } = useState(false);
-    const handleToogle = () => {
+    const handleToggle = () => {
         setIsDark(!isDark)
     }
 
@@ -40,12 +40,18 @@ const Header = () => {
                             <NavLink to="/courses" activeclassname="active">COURSES</NavLink>
                             <NavLink to="/faq" activeclassname="active">FAQ</NavLink>
                             <NavLink to="/blog" activeclassname="active">BLOG</NavLink>
-                            {
-                                isDark ?
-                                    <Button onClick={handleToogle}>Dark</Button>
-                                    :
-                                    <Button onClick={handleToogle}>Light</Button>
-                            }
+
+                            <div>
+                                {isDark ? (
+                                    <Button className="toggle-btn-light" onClick={handleToggle}>
+                                        Light Mode
+                                    </Button>
+                                ) : (
+                                    <Button className="toggle-btn-dark" onClick={handleToggle}>
+                                        Dark Mode
+                                    </Button>
+                                )}
+                            </div>
 
                             {
                                 user?.uid ?
