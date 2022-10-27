@@ -1,0 +1,37 @@
+.coursecard .card {
+    background-color: #1e2f50ef;
+    border: none;
+    color: white;
+}
+
+.coursecard .card h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.coursecard .card p {
+    font-size: 15px;
+    color: whitesmoke;
+    font-weight: 400;
+}
+
+.coursecard .card-title .img {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.coursecard .btn {
+    background-color: #506027;
+    color: white;
+}
+
+.coursecard .btn:hover {
+    background-color: #506027;
+    color: white;
+}
+
+.category a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+
+}

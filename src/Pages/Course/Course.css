@@ -1,0 +1,35 @@
+.coursedetails .card1 {
+    background-color: #1E2F50;
+    color: rgb(227, 226, 226);
+    border: none;
+
+}
+
+.coursedetails .cd {
+    color: #a9d33e;
+}
+
+.coursedetails .cdBtn {
+    background-color: #506027;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    color: white;
+    margin-bottom: -15px;
+}
+
+.coursedetails .cdBtn:hover {
+    background-color: #2e501e;
+
+}
+
+.card2 .price {
+    border-radius: 70%;
+    padding: 20px;
+    background-color: #1E2F50;
+    color: white;
+}
+
+.fab {
+    color: #1E2F50;
+}
