@@ -24,29 +24,29 @@ export const routes = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
-                loader: () => fetch(`https://learning-platform-server-beige.vercel.app/course-categories`)
+                loader: () => fetch(`https://plearning-server.vercel.app/course-categories`)
             },
             {
                 path: '/category/:id',
                 element: <Category></Category>,
-                loader: ({ params }) => fetch(`https://learning-platform-server-beige.vercel.app/category/${params.id}`)
+                loader: ({ params }) => fetch(`https://plearning-server.vercel.app/category/${params.id}`)
             },
             {
                 path: '/course/:id',
                 element: <Course></Course>,
-                loader: ({ params }) => fetch(`https://learning-platform-server-beige.vercel.app/course/${params.id}`)
+                loader: ({ params }) => fetch(`https://plearning-server.vercel.app/course/${params.id}`)
 
             },
             {
                 path: '/course-checkout/:id',
                 element: <Privateroute><Checkout></Checkout></Privateroute>,
-                loader: ({ params }) => fetch(`https://learning-platform-server-beige.vercel.app/course/${params.id}`)
+                loader: ({ params }) => fetch(`https://plearning-server.vercel.app/course/${params.id}`)
 
             },
             {
                 path: '/courses',
                 element: <Courses></Courses>,
-                loader: () => fetch(`https://learning-platform-server-beige.vercel.app/courses`)
+                loader: () => fetch(`https://plearning-server.vercel.app/courses`)
             },
 
             {

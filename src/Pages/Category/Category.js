@@ -9,7 +9,7 @@ const Category = () => {
     const cats = useLoaderData();
     const [categories, courseCategories] = useState([]);
     useEffect(() => {
-        fetch('https://learning-platform-server-beige.vercel.app/course-categories')
+        fetch('https://plearning-server.vercel.app/course-categories')
             .then(res => res.json())
             .then(data => courseCategories(data))
     }
